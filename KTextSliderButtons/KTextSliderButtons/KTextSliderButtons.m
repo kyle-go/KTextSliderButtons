@@ -31,6 +31,8 @@
 
 - (void)setTextButtons:(NSString *)text, ...
 {
+    [[self subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
     va_list args;
     va_start(args, text);
     NSMutableArray *paramList = [[NSMutableArray alloc] init];
