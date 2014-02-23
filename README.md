@@ -8,9 +8,10 @@ KTextSliderButtons
 
 How to use?
 
-    [self.silderButtons setTextButtons:@"原创", @"转发微博", @"全部", nil];
-    self.silderButtons.delegate = self;
+    [self.sliderButtons setDefaultIndex:2 type:KTextSliderTypeAdjusted withTexts:@"原创", @"转发微博", @"全部", nil];
+    self.sliderButtons.delegate = self;
     //实现委托方法就可以啦。
-    - (void) clickedButtonAtIndex:(NSUInteger)index {
-      NSLog(@"click KTextSliderButtons at index = %lu", (unsigned long)index);
+    - (void)textSliderButtons:(KTextSliderButtons *)buttons clickedButtonAtIndex:(NSUInteger)index
+    {
+        NSLog(@"click KTextSliderButtons at index = %lu", (unsigned long)index);
     }
