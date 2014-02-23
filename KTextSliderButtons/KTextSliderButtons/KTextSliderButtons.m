@@ -29,7 +29,7 @@
     return self;
 }
 
-- (void)setTextButtons:(NSString *)text, ...
+- (void)setDefaultIndex:(NSUInteger)defaultIndex withTexts:(NSString *)text, ...
 {
     [[self subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
@@ -52,7 +52,7 @@
         [btn setTitle:[paramList objectAtIndex:i] forState:UIControlStateNormal];
         btn.titleLabel.textColor = btnNormalColor;
         btn.tintColor = btnNormalColor;
-        if (i == 0) {
+        if (i == defaultIndex) {
             btn.tintColor = btnSelectedColor;
         }
         [_buttons addObject:btn];
@@ -73,7 +73,7 @@
         [self addSubview:btn];
     }
     
-    _indicator = [[UILabel alloc] initWithFrame:CGRectMake(0, btnHeight, _btnWidth, 2)];
+    _indicator = [[UILabel alloc] initWithFrame:CGRectMake(_btnWidth*defaultIndex, btnHeight, _btnWidth, 2)];
     _indicator.backgroundColor = indicatorColor;
     [self addSubview:_indicator];
 }

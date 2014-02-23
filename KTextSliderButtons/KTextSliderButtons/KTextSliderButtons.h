@@ -16,7 +16,7 @@
 
 @interface KTextSliderButtons : UIView
 
-- (void)setTextButtons:(NSString *)text, ... NS_REQUIRES_NIL_TERMINATION;
+- (void)setDefaultIndex:(NSUInteger)defaultIndex withTexts:(NSString *)text, ...NS_REQUIRES_NIL_TERMINATION;
 
 @property (nonatomic,assign) id<KTextSilderButtonsDelegate> delegate;
 

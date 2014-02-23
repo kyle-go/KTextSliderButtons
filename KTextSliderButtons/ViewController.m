@@ -20,7 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.silderButtons setTextButtons:@"原创", @"转发微博", @"全部", nil];
+    [self.silderButtons setDefaultIndex:1 withTexts:@"原创", @"转发微博", @"全部", nil];
     self.silderButtons.delegate = self;
 }
 
