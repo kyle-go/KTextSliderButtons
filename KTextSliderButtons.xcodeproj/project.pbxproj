@@ -20,7 +20,6 @@
 		275A56F218B90E7200899A3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275A56D118B90E7200899A3E /* Foundation.framework */; };
 		275A56F318B90E7200899A3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275A56D518B90E7200899A3E /* UIKit.framework */; };
 		275A570B18B90EA100899A3E /* KTextSliderButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 275A570818B90EA100899A3E /* KTextSliderButtons.m */; };
-		275A570C18B90EA100899A3E /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 275A570A18B90EA100899A3E /* UIButton+Block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +51,6 @@
 		275A56F018B90E7200899A3E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		275A570718B90EA100899A3E /* KTextSliderButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTextSliderButtons.h; sourceTree = "<group>"; };
 		275A570818B90EA100899A3E /* KTextSliderButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTextSliderButtons.m; sourceTree = "<group>"; };
-		275A570918B90EA100899A3E /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
-		275A570A18B90EA100899A3E /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +137,6 @@
 			children = (
 				275A570718B90EA100899A3E /* KTextSliderButtons.h */,
 				275A570818B90EA100899A3E /* KTextSliderButtons.m */,
-				275A570918B90EA100899A3E /* UIButton+Block.h */,
-				275A570A18B90EA100899A3E /* UIButton+Block.m */,
 			);
 			path = KTextSliderButtons;
 			sourceTree = "<group>";
@@ -243,7 +238,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				275A56E818B90E7200899A3E /* ViewController.m in Sources */,
-				275A570C18B90EA100899A3E /* UIButton+Block.m in Sources */,
 				275A570B18B90EA100899A3E /* KTextSliderButtons.m in Sources */,
 				275A56E218B90E7200899A3E /* AppDelegate.m in Sources */,
 				275A56DE18B90E7200899A3E /* main.m in Sources */,
@@ -446,6 +440,7 @@
 				275A570218B90E7200899A3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		275A570318B90E7200899A3E /* Build configuration list for PBXNativeTarget "KTextSliderButtonsTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +449,7 @@
 				275A570518B90E7200899A3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
